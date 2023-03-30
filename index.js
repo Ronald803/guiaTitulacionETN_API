@@ -1,13 +1,14 @@
-const express   =  require('express');
-const config    = require('./config')
+const express   = require('express');
+const cors      = require('cors');
+const config    = require('./config');
+const connectDB = require('./db');
 const router    = require('./network/routes')
 const app = express();
 
-app.use('/', function(req,res){
-    res.send('Hola esta es la API de la app Guía Titulación ETN')
-})
+connectDB(config.dbUrl); //connectig to dataBase
+app.use( cors() )
+app.use(express.json()) // this is nessary in order to read the body of the requests
 router(app);
 app.listen(config.port, ()=>{
     console.log('La aplicación esta escuchando en http://localhost:'+config.port);
 });
-console.log('La aplicación está escuchando en http://localhost:3000');
