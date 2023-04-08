@@ -10,6 +10,14 @@ const mySchema = new Schema({
     password: {
         type: String,
         required: true
+    },
+    name: {
+        type: String,
+        required: true
+    },
+    rol: {
+        type: String,
+        required: true
     }
 })
 

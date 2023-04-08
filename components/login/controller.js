@@ -16,8 +16,9 @@ function login(email,password){
         const payload = {uid: user[0]._id}
         const token = jwt.sign(payload,process.env.SECRETORPRIVATEKEY,{expiresIn: '4h'})
         resolve({
-            token,
-            msg: "Logged correctly"
+            name: user[0].name,
+            rol: user[0].rol,
+            token
         })
     } )
 }
