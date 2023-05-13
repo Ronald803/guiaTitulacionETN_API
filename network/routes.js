@@ -9,7 +9,7 @@ const routes = function(server){
     server.use('/api/user',user);
     server.use('/api/step',step);
     server.use('/api/stage',stage);
-    server.use('/api/trajectory',trajectory);
+    server.use('/api/trajectory',trajectory);  //cambiar y poner en /api/user/trajectory
 }
 
 module.exports = routes

@@ -27,5 +27,17 @@ function addUser(name,username,email,professor,tutor,projectTitle,mention,courts
         })
     } )
 }
-
-module.exports = {addUser}
+function addTrajectory(studentId,stage,steps){
+    return new Promise(async(resolve,reject)=>{
+        const trajectory = {studentId,stage,steps};
+        const newTrajectory = await store.addTrajectory(trajectory);
+        resolve(newTrajectory);
+    })
+}
+function getTrajectory(filter){
+    return new Promise(async(resolve,reject)=>{
+        const arrayOfTrajectory = await store.listTrajectory(filter)
+        resolve(arrayOfTrajectory)
+    })
+}
+module.exports = {addUser,addTrajectory,getTrajectory}
