@@ -12,13 +12,17 @@ function login(email,password){
         //________________ Checking password is correct _______________
         const validPassword = bcrypt.compareSync(password,user[0].password)
         if(!validPassword){ return reject('Incorrect Information')}
+        //________________ Adding trajectory __________________________
+        const trajectory = await storeUser.listTrajectory({studentId:user[0]._id})
+        console.log({trajectory});
         //________________ Generating jwtoken _________________________
         const payload = {uid: user[0]._id}
         const token = jwt.sign(payload,process.env.SECRETORPRIVATEKEY,{expiresIn: '4h'})
         resolve({
             name: user[0].name,
             rol: user[0].rol,
-            token
+            token,
+            trajectory
         })
     } )
 }

@@ -47,10 +47,6 @@ const mySchema = new Schema({
         type: String,
         required: true
     },
-    progress: {
-        type: Array,
-        required: false
-    }
 })
 
 const model     = mongoose.model('User',mySchema)

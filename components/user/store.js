@@ -21,4 +21,10 @@ async function listTrajectory(filter){
     const arrayOfTrajectories = await ModelDos.find(filter)
     return arrayOfTrajectories
 }
-module.exports = { add,list,addTrajectory,listTrajectory }
+async function addStepsToTrajectory(id,steps){
+    const foundStage = await ModelDos.findById(id);
+    foundStage.steps = steps;
+    await foundStage.save()
+    return foundStage
+}
+module.exports = { add,list,addTrajectory,listTrajectory,addStepsToTrajectory }
