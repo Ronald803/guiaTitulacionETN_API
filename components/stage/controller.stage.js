@@ -1,12 +1,17 @@
-const store     = require('./store.stage')
-const storeSteps= require('../step/store') 
+const store         = require('./store.stage');
+const storeSteps    = require('../step/store');
+const controllerUser= require('../user/controller');
 
 function addStage(requirements,name,notes,title){
     return new Promise(async(resolve,reject)=>{
         const stage = {
             requirements,name,notes,title
         }
-        const newStage = await store.add(stage)
+        const newStage = await store.add(stage);
+        const allUsers = await controllerUser.getUser()
+        allUsers.map(async (user)=>{
+            await controllerUser.addTrajectory(user._id,name,[])
+        })
         resolve(newStage)
     })
 }

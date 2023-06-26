@@ -30,6 +30,12 @@ function addUser(name,username,email,professor,tutor,projectTitle,mention,courts
         })
     } )
 }
+function getUser(filter){
+    return new Promise(async(resolve,reject)=>{
+        const users = await store.list(filter);
+        resolve(users);
+    })
+}
 function addTrajectory(studentId,stage,steps){
     return new Promise(async(resolve,reject)=>{
         const trajectory = {studentId,stage,steps};
@@ -50,4 +56,4 @@ function updateTrajectory(stage_id,steps){
         resolve(updatedTrajectory)
     })
 }
-module.exports = {addUser,addTrajectory,getTrajectory,updateTrajectory}
+module.exports = {addUser,getUser,addTrajectory,getTrajectory,updateTrajectory}

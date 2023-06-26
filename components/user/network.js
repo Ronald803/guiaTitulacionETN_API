@@ -43,4 +43,13 @@ router.post('/',(req,res)=>{
             response.error(req,res,"Algo salió mal",400,e)
         })
 })
+router.get('/',validateJWT(),(req,res)=>{
+    controller.getUser()
+        .then(users=>{
+            response.success(req,res,users.length,users,200)
+        })
+        .catch(e=>{
+            response.error(req,res,"Algo salió mal",400,e)
+        })
+})
 module.exports = router;
