@@ -9,7 +9,7 @@ function addUser(name,username,email,professor,tutor,projectTitle,mention,courts
         //______________ encrypting password ______________
         const salt = bcryptjs.genSaltSync();
         const encryptPassword = bcryptjs.hashSync( password,salt )
-        //_________________________________________________
+        //______________ Storing the info of the new user _______
         const newUser = {
             name,username,email,professor,tutor,projectTitle,mention,courts,
             password: encryptPassword,
