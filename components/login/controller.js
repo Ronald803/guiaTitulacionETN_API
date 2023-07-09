@@ -40,7 +40,7 @@ function sendEmailToRecoverIdentity(email){
         const subject = "Recupera tu contraseña"
         const body = `
                         <h1>Click en el link</h1>
-                        <a href="https://guia-titulacion-etn.netlify.app/auth/${token}">Recuperar mi contraseña</a>
+                        <a href="https://guia-titulacion-etn.netlify.app/restore-password/${token}">Recuperar mi contraseña</a>
                     `
         await smtpServer.mailer(email,subject,body)
         resolve({
@@ -63,9 +63,6 @@ function saveNewPassword(token,newPassword){
         const updatedUser = await storeUser.storeNewPasswordDataBase(user[0]._id,encryptPassword);
         // ________________________________________________________________________________
         resolve({
-            newPassword,
-            email,
-            encryptPassword,
             updatedUser
         })
     })

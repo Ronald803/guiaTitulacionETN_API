@@ -14,7 +14,7 @@ router.post('/',(req,res)=>{
         })
 })
 
-router.post('/recoverIdentity',(req,res)=>{
+router.post('/restore-password',(req,res)=>{
     const {email} = req.body;
     controller.sendEmailToRecoverIdentity(email)
         .then(message=>{
@@ -25,8 +25,8 @@ router.post('/recoverIdentity',(req,res)=>{
         })
 })
 
-router.put('/newpassword/:token',(req,res)=>{
-    const token = req.params.token;
+router.put('/restore-password',(req,res)=>{
+    const token = req.header('x-token');
     const {newpassword} = req.body;
     controller.saveNewPassword(token,newpassword)
         .then(message=>{
