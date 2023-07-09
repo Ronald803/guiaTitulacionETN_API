@@ -27,13 +27,13 @@ router.post('/restore-password',(req,res)=>{
 
 router.put('/restore-password',(req,res)=>{
     const token = req.header('x-token');
-    const {newpassword} = req.body;
-    controller.saveNewPassword(token,newpassword)
+    const {password} = req.body;
+    controller.saveNewPassword(token,password)
         .then(message=>{
             response.success(req,res,'Se cambió la contraseña exitosamente',message,200)
         })
         .catch(e=>{
-            response.error(erq,res,'Algo salió mal',400,e)
+            response.error(req,res,'Algo salió mal',400,e)
         })
 })
 
