@@ -1,0 +1,85 @@
+{
+    "name":"defensa_publica",
+    "requirements": "",
+    "notes": [""],
+    "title": "Trámite para Defensa Pública",
+    "data":
+        [
+            {
+                "type": "Trámite",
+                "text": "Recoger documentos a firmar",
+                "content": 
+                    [
+                        "3 copias de citación de defensa pública",
+                        "3 copias de formulario de distribución de proyecto"                        
+                    ],
+                "place": "Dirección de Carrera",
+                "stage": "defensa_publica",
+                "duration": 0,
+                "number": 1
+            },
+            {
+                "type": "Trámite",
+                "text": "Dejar una fotocopia simple de la citación para empezar trámite de defensa",
+                "content": 
+                    [
+                    ],
+                "place": "Kardex Facultativo",
+                "stage": "defensa_publica",
+                "duration": 0,
+                "number": 2
+            },
+            {
+                "type": "Trámite",
+                "text": "Preparar 4 copias en empastado del proyecto de grado",
+                "content": 
+                    [
+                        "Agregar datos de contacto en una nueva hoja al final de las copias: ",
+                        "i. Nombre",
+                        "ii. Teléfono",
+                        "iii. Email"
+                    ],
+                "place": "",
+                "stage": "defensa_publica",
+                "duration": 0,
+                "number": 3
+            },
+            {
+                "type": "Trámite",
+                "text": "Preparar Resúmenes",
+                "content": [
+                    "Resumen de proyecto de grado (2 páginas máximo). Contenido: i. Título del proyecto centrado ii. Nombre del postulante iii. Dirección y teléfono iv. Resumen(objetivo, explicaciòn resultados y conclusiones)",
+                    "Resumen del proyecto (máximo 10 líneas) Con visto bueno del tutor"
+                            ],
+                "place": "",
+                "stage": "defensa_publica",
+                "duration": 0,
+                "number": 4
+            },
+            {
+                "type": "Trámite",
+                "text": "Copia de formulario GAR 101",
+                "content": [
+                    "Presentar ficha de seguimiento de trámite en ventanilla 6 indicando el requerimiento de una copia del formulario GAR 101 (Gestiones UMSA)",
+                    "Pagar derecho de examen de grado (48 Bs., Caja recaudadora UMSA)",
+                    "Recoger copia de formulario GAR 101 presentando el derecho de examen de grado"
+                            ],
+                "place": "Monoblock UMSA",
+                "stage": "defensa_publica",
+                "duration": 0,
+                "number": 5
+            },
+            {
+                "type": "Trámite",
+                "text": "Otros requisitos",
+                "content": [
+                    "Registro DIVEFI (divefi.umsa.bo)",
+                    "4 fotografías tamaño 4x4 fondo plomo claro"                    
+                            ],
+                "place": "",
+                "stage": "defensa_publica",
+                "duration": 0,
+                "number": 6
+            }
+        ]
+}

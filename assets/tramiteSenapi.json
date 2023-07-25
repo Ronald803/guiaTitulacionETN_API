@@ -1,0 +1,59 @@
+{
+    "name":"tramite_senapi",
+    "requirements": "Haber finalizado y tener la nota final de la materia ETN- 1040",
+    "notes": ["Este trámite usualmente se puede realizar entre el último mes del semestre y el primer mes del semestre"],
+    "title": "Trámite SENAPI",
+    "data":
+        [
+            {
+                "type": "Compra",
+                "text": "Depositar 100 Bs. a la cuenta de SENAPI",
+                "content": 
+                    [
+                        "Cuenta 1-4668220"
+                    ],
+                "place": "SENAPI",
+                "stage": "tramite_senapi",
+                "duration": 0,
+                "number": 1
+            },
+            {
+                "type": "Compra",
+                "text": "Depositar 60 Bs. a la gaceta oficial de Bolivia",
+                "content": 
+                    [
+                        "Cuenta 1-293633"
+                    ],
+                "place": "Gaceta Oficial de Bolivia",
+                "stage": "tramite_senapi",
+                "duration": 0,
+                "number": 2
+            },
+            {
+                "type": "Trámite",
+                "text": "Dejar documentos en SENAPI",
+                "content": 
+                        [
+                            "Fotocopias de recibos de depósito",
+                            "Fotocopia de carnet",
+                            "Carta de solicitud de registro",
+                            "Formulario de registro",
+                            "2 copias del proyecto de grado (2 anillados o anillado y CD serigrafiado)",
+                            "Todo en sobre manila"
+                        ],
+                "place": "SENAPI",
+                "stage": "tramite_senapi",
+                "duration": 0,
+                "number": 3
+            },
+            {
+                "type": "Trámite",
+                "text": "Recoger resolución SENAPI y copia registrada",
+                "content": [],
+                "place": "SENAPI",
+                "stage": "tramite_senapi",
+                "duration": 0,
+                "number": 4
+            }
+        ]
+}

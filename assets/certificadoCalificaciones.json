@@ -1,0 +1,69 @@
+{
+    "name":"certificado_calificaciones",
+    "requirements": "Haber finalizado y tener la nota final de la materia ETN- 1040",
+    "notes": ["Este trámite usualmente se puede realizar entre el último mes del semestre y el primer mes del semestre"],
+    "title": "Trámite para Certificado Único de Calificaciones",
+    "data":
+        [
+            {
+                "type": "Trámite",
+                "text": "Solicitar Certificado de Notas",
+                "content": 
+                    [
+                        "Subir fotografía fondo celeste tamaño 3x3 a la plataforma",
+                        "Solicitar Certificado de Notas especificando el plan de estudios"                        
+                    ],
+                "place": "http://sisacademico.umsa.edu.bo/est/index.jsp",
+                "stage": "certificado_calificaciones",
+                "duration": 0,
+                "number": 1
+            },
+            {
+                "type": "Compra",
+                "text": "Compra Certificado Único de Calificaciones",
+                "content": 
+                    [
+                        "3 Certificados",
+                        "Precio Total: Bs. 105"
+                    ],
+                "place": "Monoblock",
+                "stage": "certificado_calificaciones",
+                "duration": 0,
+                "number": 2
+            },
+            {
+                "type": "Trámite",
+                "text": "Solicitar Record Académico",
+                "content": ["El Record Académico debe contar con la totalidad de materias aprobadas y sus respectivas notas (incluyendo etn-1040)"],
+                "place": "Kardex Carrera Ingeniería Electrónica (7mo Piso - Facultad de Ingeniería Obelisco)",
+                "stage": "certificado_calificaciones",
+                "duration": 0,
+                "number": 3
+            },
+            {
+                "type": "Trámite",
+                "text": "Solicitar el formulario original de Registro y Seguimiento",
+                "content": [
+                    "Este formulario debe contar con la firma del Director de la Carrera",
+                    "Este paso y el anterior se pueden realizar de manera simultanea"
+                            ],
+                "place": "Kardex Carrera Ingeniería Electrónica (7mo Piso - Facultad de Ingeniería Obelisco)",
+                "stage": "certificado_calificaciones",
+                "duration": 0,
+                "number": 4
+            },
+            {
+                "type": "Trámite",
+                "text": "Dejar los documentos en Kardex Facultativo",
+                "content": [
+                    "Certificado Único de Calificaciones en blanco (3 copias)",
+                    "Formulario de Registro y Seguimiento",
+                    "Record Académico"
+                            ],
+                "place": "Kardex Facultativo (Mezzanine - Facultad de Ingeniería Obelisco)",
+                "stage": "certificado_calificaciones",
+                "duration": 2,
+                "number": 5
+            }
+        ]
+}

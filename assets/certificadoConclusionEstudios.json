@@ -1,0 +1,48 @@
+{
+    "name":"certificado_conclusion_estudios",
+    "requirements": "Haber concluido el trámite de Certificado Único de Calificaciones",
+    "notes": [""],
+    "title": "Trámite para Certificado de Conclusión de Estudios Carrera de Ingeniería Electrónica",
+    "data":
+        [
+            {
+                "type": "Trámite",
+                "text": "Revisar en la URCHA, su file que debe tener los siguientes documentos",
+                "content": 
+                    [
+                        "Certificado de Nacimiento Original Computarizado",
+                        "Certificado de aprobación de curso pre-facultativo y/o su equivalente de acuerdo al sistema de admisión",
+                        "Copia legalizada de título de bachiller",
+                        "Copias de matrículas (desde el ingreso hasta el último canje efectuado)",
+                        "Certificado de notas hasta el semestre de egreso (trámite anterior)",
+                        "Formulario de traspaso, carrera paralela o admisión especial (Si existiese)",
+                        "Resoluciones Universitarias, Facultativas, etc. (Si existiese)",
+                        "Resolución de Convalidación de Materias (Si existiese). Transcritas en certificado",
+                        "Informe de Homologación de Materias (Si existiese). Transcritas en certificado"
+                    ],
+                "place": "Kardex Carrera Ingeniería Electrónica (7mo Piso - Facultad de Ingeniería Obelisco)",
+                "stage": "certificado_conclusion_estudios",
+                "duration": null,
+                "number": 1
+            },
+            {
+                "type": "Trámite",
+                "text": "Preparar los siguientes documentos",
+                "content": 
+                    [
+                        "Certificado de Suficiencia del curso de Inglés (no mayor a tres años de la fecha de aprobación)",
+                        "Certificados en los que conste que no tiene deuda de material bibliográfico en las bibliotecas de: La Caffera y la Facultad (válido por 3 días)",
+                        "Certificado de almacén de laboratorio, en el que conste que no adeuda material de laboratorio (válido por 3 días)",
+                        "Certificado del Área desconcentrada de la facultad en la que conste que no tiene deudas económicas (válido por 30 días)",
+                        "Cuatro fotografías a color 4x4 con fondo rojo con traje formal",
+                        "Fotocopia de la cédula de identidad y7o documento de identificación en caso de extranjeros",
+                        "Un valor establecido en el tesoro universitario de Bs. 65 (para Certificado de Conclusión de estudios) cancelar en la caja del Monoblock Central",
+                        "Dos fotocopias del plan de estudios de la mención en la que se ha concluido"
+                    ],
+                "place": "Kardex Carrera Ingeniería Electrónica (7mo Piso - Facultad de Ingeniería Obelisco)",
+                "stage": "certificado_conclusion_estudios",
+                "duration": null,
+                "number": 1
+            }
+        ]
+}
