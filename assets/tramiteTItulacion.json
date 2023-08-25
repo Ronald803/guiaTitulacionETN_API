@@ -1,0 +1,146 @@
+{
+  "name": "titulación",
+  "requirements": "Aprobar la defensa pública",
+  "notes": [
+    ""
+  ],
+  "title": "Trámite para Defensa Pública",
+  "data": [
+    {
+      "type": "Trámite",
+      "text": "Acta de grado legalizada",
+      "content": [
+        "Comprar un valor para legalización de acta de grado (Gestiones UMSA; precio: 75 Bs.)",
+        "Presentar valor y fotocopia simple del acta en dirección de carrera",
+        "Dejar fotocopia del acta con sello de carrera y valor adjuntado en Kardex facultativo para su legalización (7 días)"
+      ],
+      "place": "",
+      "stage": "titulación",
+      "duration": 8,
+      "number": 1
+    },
+    {
+      "type": "Trámite",
+      "text": "Certificado de calificaciones de grado",
+      "content": [
+        "Comprar 3 certificados de calificaciones de grado (Gestiones UMSA; 37 Bs./u)",
+        "Dejar certificados en Kardex facultativo"
+      ],
+      "place": "",
+      "stage": "titulación",
+      "duration": 4,
+      "number": 2
+    },
+    {
+      "type": "Trámite",
+      "text": "Certificado de no adeudo de área desconcentrada",
+      "content": [
+        "Adjuntar un pdf con CI y el acta de grado al solicitar el certificado",
+        "Valido por 30 días"
+      ],
+      "place": "https://tramitesenlinea.umsa.bo/authentication/login",
+      "stage": "titulación",
+      "duration": 2,
+      "number": 3
+    },
+    {
+      "type": "Trámite",
+      "text": "Certificados de no adeudo y depósito de proyecto de grado",
+      "content": [
+        "Requisitos:",
+        "i. Fotocopia de carnet.",
+        "ii. Fotocopia de Matrícula.",
+        "iii. Empastado y/o CD serigrafiado."
+      ],
+      "place": "Biblioteca de carrera",
+      "stage": "titulación",
+      "duration": 0,
+      "number": 4
+    },
+    {
+      "type": "Trámite",
+      "text": "Certificado de no adeudo",
+      "content": [
+        "Requisitos:",
+        "i. Fotocopia de carnet.",
+        "ii. Fotocopia de Matrícula.",
+        "iii. Certificados originales de Biblioteca de carrera.",
+        "iv. Resolución SENAPI.",
+        "v. 1 empastado del proyecto de grado y CD serigrafiado."
+      ],
+      "place": "Biblioteca central",
+      "stage": "titulación",
+      "duration": 0,
+      "number": 5
+    },
+    {
+      "type": "Trámite",
+      "text": "Recoger certificado de calificaciones de grado",
+      "content": [
+        "Requisitos:",
+        "i. Certificado de no adeudo área desconcentrada.",
+        "ii. Certificado de biblioteca de carrera.",
+        "iii. Certificado de biblioteca central."
+      ],
+      "place": "Kardex facultativo",
+      "stage": "titulación",
+      "duration": 0,
+      "number": 6
+    },
+    {
+      "type": "Trámite",
+      "text": "Certificado de no adeudo y depósito de depósito de proyecto de grado",
+      "content": [
+        "Requisitos:",
+        "i. 1 empastado del proyecto de grado y CD serigrafiado.",
+        "ii. Haber tramitado el certificado de biblioteca central."
+      ],
+      "place": "Archivo UMSA, entrando por la puerta trasera del monoblock",
+      "stage": "titulación",
+      "duration": 0,
+      "number": 7
+    },
+    {
+      "type": "Trámite",
+      "text": "Diploma académico",
+      "content": [
+        "Requisitos:",
+        "i. Ejemplar de certificado de calificaciones de grado.",
+        "ii. Fotocopia legalizada del acta de modalidad de graduación o su equivalente respaldado con Recibo Original (sellado).",
+        "iii. CD serigrafiado en sobre blanco o de plástico.",
+        "iv. Fotocopia simple del carnet de identidad.",
+        "v. Fotocopia simple anverso y reverso del diploma de bachiller.",
+        "vi. Fotocopia de matrícula, cualquier gestión.",
+        "vii. Certificado actualizado de encuesta DSIE https://sia.umsa.bo/encuesta/authentication/login",
+        "viii. 2 Fotografías a color 3.5x3.5 en papel mate fondo plomo claro, sin lentes.",
+        "ix. Certificado de nacimiento original computarizado (actualizado en fechas).",
+        "x. Fotocopia/Impresión recibo de pago (Válido por 24 horas).",
+        "xi. Certificado actualizado de la biblioteca central de la UMSA.",
+        "xii. Imprimir dos copias del formulario de Solicitud de trámite diploma académico.",
+        "Toda la documentación deberá ser presentada en el orden establecido en los requisitos, en un sobre plástico transparente con broches en las fechas de recepción de documentos (no perforados ni engrapados)."
+      ],
+      "place": "Edificio Melissa.",
+      "stage": "titulación",
+      "duration": 1,
+      "number": 8
+    },
+    {
+      "type": "Trámite",
+      "text": "Título universitario",
+      "content": [
+        "Requisitos:",
+        "i. Fotocopia simple de carnet de identidad.",
+        "ii. 2 Fotografías a color 6x6 en papel mate, fondo plomo claro, sin lentes.",
+        "a. En sobre pequeño blanco para carta",
+        "b. Rotular consignando apellidos nombres, número de teléfono y correo electrónico",
+        "iii. Formulario de solicitud de trámite título profesional dos ejemplares impresos.",
+        "iv. Fotocopia/Impresión recibo de pago (Válido por 24 horas).",
+        "Toda la documentación en folder color marfil (sin perforar ni engrapar)."
+      ],
+      "place": "Edificio Melissa.",
+      "stage": "titulación",
+      "duration": 0,
+      "number": 9
+    }
+  ]
+}
