@@ -1,8 +1,9 @@
 const professorStore = require('./professor.store')
 
-function addProfessor(){
+function addProfessor(name,subjects,projects){
     return new Promise(async(resolve,reject)=>{
-        const newProfessor = await professorStore.add()
+        const professor = {name,subjects,projects}
+        const newProfessor = await professorStore.add(professor)
         resolve(newProfessor)
     })
 }

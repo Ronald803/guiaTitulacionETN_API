@@ -11,4 +11,10 @@ async function list(filter){
     return professors
 }
 
-module.exports = { add,list}
+async function updateProjects(id,project){
+    const foundProfessor = await ModelProfessor.findById(id);
+    foundProfessor.projects.push(project)
+    await foundProfessor.save()
+    return foundProfessor
+}
+module.exports = { add,list,updateProjects }

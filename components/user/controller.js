@@ -1,7 +1,8 @@
-const store     = require('./store')
-const bcryptjs  = require('bcryptjs')
-const jwt       = require('jsonwebtoken')
-const storeStage= require('../stage/store.stage')
+const store         = require('./store')
+const bcryptjs      = require('bcryptjs')
+const jwt           = require('jsonwebtoken')
+const storeStage    = require('../stage/store.stage')
+const professorStore= require('../professor/professor.store')
 
 function addUser(name,username,email,professor,tutor,projectTitle,mention,courts,password){
     return new Promise( async (resolve,reject)=>{
@@ -9,6 +10,12 @@ function addUser(name,username,email,professor,tutor,projectTitle,mention,courts
         //______________ encrypting password ______________
         const salt = bcryptjs.genSaltSync();
         const encryptPassword = bcryptjs.hashSync( password,salt )
+        // ______________ Checking if the professor exists in the data base ______________
+        // ___________ if it doesn't exists it will be storage in the database ___________
+        const professorFound = await professorStore.list({"name": professor});
+        if(professorFound.length==0){
+            await professorStore.add({ name:professor,subjects: [],projects: [name] })
+        } else { await professorStore.updateProjects(professorFound[0]._id,name) }
         //______________ Storing the info of the new user _______
         const newUser = {
             name,username,email,professor,tutor,projectTitle,mention,courts,

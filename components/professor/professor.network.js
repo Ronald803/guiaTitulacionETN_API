@@ -11,8 +11,8 @@ router.get('/',(req,res)=>{
 })
 
 router.post('/',(req,res)=>{
-    const {name, subject, projects} = req.body;
-    professorController.addProfessor()
+    const {name, subjects, projects} = req.body;
+    professorController.addProfessor(name,subjects,projects)
         .then(msg=>{
             res.send(msg)
         })
